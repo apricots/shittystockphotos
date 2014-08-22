@@ -33,7 +33,7 @@ if ('development' == app.get('env')) {
 
 
 app.get('/', function(req, res) {
-  res.sendfile("views/index.html");
+  res.sendfile("views/home.html");
 });
 
 
