@@ -4,7 +4,7 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
   $locationProvider.html5Mode(true);
 
   $routeProvider
-  .when('/', {
+  .when('/meow', {
     templateUrl: 'views/meow.html',
     controller: 'DefaultCtrl'
   })

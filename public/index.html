@@ -4,27 +4,26 @@
    <meta charset="utf-8"/>
    <title>Shitty Stock Photos</title>
    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+   <link rel="stylesheet" type="text/css" href="vendor/normalize.css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300|Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  Hello
+
+  <ul class="navigation">
+  <li class="logo">Shitty Stock Photos</li>
+  <li><a href="#" class="menu-item">Home</a></li>
+  <li><a href="#" class="menu-item">About</a></li>
+  <li><a href="#" class="menu-item">Products</a></li>
+  <li><a href="#" class="menu-item">Contact</a></li>
+</ul>
+
   <div ng-view></div>
   <script src="vendor/angular/angular.js"></script>
   <script src="vendor/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="controllers/default.js"></script>
-<!-- 
-  <ul class="navigation">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Products</a></li>
-  <li><a href="#">Contact</a></li>
-</ul>
 
 
-   <div class="container">
-    <div class="child one">One</div>
-    <div class="child two">Two</div>
-    <div class="child three">Three</div>
-  </div> -->
+
 </body>
 </html>
