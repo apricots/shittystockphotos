@@ -32,9 +32,7 @@ if ('development' == app.get('env')) {
 }
 
 
-app.get('/', function(req, res) {
-  res.sendfile("views/home.html");
-});
+
 
 
 mongoose.connect(process.env.MONGOLAB_URI || 'localhost:27017/shitty-dev', function(err) {
