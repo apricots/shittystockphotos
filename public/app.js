@@ -6,7 +6,7 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
   $routeProvider
   .when('/', {
     templateUrl: 'views/meow.html',
-    controller: 'SplashCtrl'
+    controller: 'DefaultCtrl'
   })
   .otherwise({
     redirectTo: '/'
