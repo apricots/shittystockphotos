@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "braintree": "^1.22.0",
     "express": "3.4.8",
     "mongoose": "~3.8.14"
   },

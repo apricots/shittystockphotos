@@ -9,10 +9,19 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var mongoose = require('mongoose');
+var braintree = require('braintree');
 
 // put mongoose schemas here
 
 var app = express();
+
+// braintree
+var gateway = braintree.connect({
+  environment: braintree.Environment.Sandbox,
+  merchantId: "k2xswjx9jbgxt3xh",
+  publicKey: "d3y8pmrm7vknyn3j",
+  privateKey: "04f2a60219cda374526ca07ddbe2b1bd"
+});
 
 // all environments
 app.set('port', process.env.PORT || 4000);
