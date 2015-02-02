@@ -2,9 +2,13 @@
   "name": "shitty-stock-photos",
   "version": "0.0.1",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "postinstall": "gulp build"
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "dependencies": {
     "braintree": "^1.22.0",
