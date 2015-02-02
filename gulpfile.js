@@ -1,6 +1,14 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
+var bower = require('bower');
+
+gulp.task('bower', function(cb){
+  bower.commands.install([], {save: true}, {})
+    .on('end', function(installed){
+      cb(); // notify gulp that this task is finished
+    });
+});
 
 gulp.task('sass', function() {
   gulp.src('public/stylesheets/style.scss')
@@ -18,4 +26,4 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['sass', 'watch']);
 
-gulp.task('build', ['sass']);
+gulp.task('build', ['bower', 'sass']);
