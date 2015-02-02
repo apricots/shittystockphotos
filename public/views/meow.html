@@ -7,15 +7,17 @@
 
 <div class="container" >
   <div ng-repeat="collection in collections">
-    <div class="grid one">
-      <figure class="effect-hover">
-        <img src="{{collection.cover}}" alt="{{collection.title1}} {{collection.title2}}"/>
-        <figcaption>
-          <h2>{{collection.title1}}<span>{{collection.title2}}</span></h2>
-          <p>{{collection.description}}</p>
-        </figcaption>    
-      </figure>
-    </div>
+    <a ng-href="/collection/{{$index}}">
+      <div class="grid one">
+        <figure class="effect-hover">
+          <img src="{{collection.cover}}" alt="{{collection.title1}} {{collection.title2}}"/>
+          <figcaption>
+            <h2>{{collection.title1}}<span>{{collection.title2}}</span></h2>
+            <p>{{collection.description}}</p>
+          </figcaption>    
+        </figure>
+      </div>
+    </a>
   </div>
 </div>
 

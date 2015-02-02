@@ -8,6 +8,10 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
     templateUrl: 'views/meow.html',
     controller: 'DefaultCtrl'
   })
+  .when('/collection/:collectionId', {
+    templateUrl: 'views/collection.html',
+    controller: 'CollectionCtrl'
+  })
   .otherwise({
     redirectTo: '/'
   });
