@@ -1,8 +1,4 @@
 
-.overlay {
-  background:rgba(0, 0, 0, .75);
-}
-
 .grid {
   position: relative;
   margin: 0 auto;
@@ -96,11 +92,11 @@ height: 100%;
 }
 
 
-figure.effect-milo {
+figure.effect-hover {
   background: #3a3a3a;
 }
 
-figure.effect-milo img {
+figure.effect-hover img {
   max-width: none;
   width: -webkit-calc(100% + 60px);
   width: calc(100% + 60px);
@@ -113,13 +109,13 @@ figure.effect-milo img {
   backface-visibility: hidden;
 }
 
-figure.effect-milo:hover img {
+figure.effect-hover:hover img {
   opacity: 0.5;
   -webkit-transform: translate3d(0,0,0) scale(1);
   transform: translate3d(0,0,0) scale(1);
 }
 
-figure.effect-milo h2 {
+figure.effect-hover h2 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -132,8 +128,8 @@ figure.effect-milo h2 {
   color: transparent;
 }
 
-figure.effect-milo:hover h2,
-figure.effect-milo:hover p a {
+figure.effect-hover:hover h2,
+figure.effect-hover:hover p a {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   display: inline;
@@ -143,7 +139,7 @@ figure.effect-milo:hover p a {
 }
 
 
-figure.effect-milo p {
+figure.effect-hover p {
   padding: 50px 10px 0 0;
   // width: 50%;
   // border-right: 1px solid #fff;
@@ -157,7 +153,7 @@ figure.effect-milo p {
   transform: translate3d(-40px,0,0);
 }
 
-figure.effect-milo:hover p {
+figure.effect-hover:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -169,14 +165,17 @@ figure.effect-milo:hover p {
   height: 400px;
   background-image: url('../images/sleeping.png');
   background-size: cover;
-  border: 2px solid darkgray;
+  // border: 2px solid darkgray;
   color: white; 
   text-shadow: 1px 1px 0 #383838;
+  margin-top: 15px;
   // text-align: center;
   font-weight: 600;
   padding-left: 3%;
   .title {
-    font-size: 60px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
 }
 
@@ -228,7 +227,9 @@ figure.effect-milo:hover p {
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   // font-family: Pacifico;
   text-shadow: 0px;
     animation: fadein 2s;
