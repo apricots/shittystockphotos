@@ -1,5 +1,5 @@
-app.controller('CollectionCtrl', function ($scope, Collection) {
+app.controller('CollectionCtrl', function ($scope, $routeParams, Collection) {
 
-  $scope.collection = Collection.getCollection(0);
+  $scope.collection = Collection.getCollection($routeParams.collectionId);
 
 });

@@ -1252,3 +1252,8 @@ stretchRight
 
   100% {
     -webkit-transform: scaleX(1); } }
+
+#collection img {
+  width: 75%; }
+#collection .container {
+  padding: 5%; }

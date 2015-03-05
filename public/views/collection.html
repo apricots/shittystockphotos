@@ -1,2 +1,21 @@
-ok
-{{collection}}
+<div id="collection">
+  <div class="container" ng-repeat="image in collection.fullSized">
+    <center>
+      <img ng-src="{{image.url}}"/>
+      <p>
+        Image Url:<input type="text" id="txtfld" onClick="SelectAll('txtfld');" style="width:auto" value = "{{image.url}}" />
+      </p>
+    </a>
+    </center>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+function SelectAll(id)
+{
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
+}
+</script>
+

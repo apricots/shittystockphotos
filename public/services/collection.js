@@ -82,7 +82,24 @@ app.factory('Collection', function(){
       "title1": "Dinner",
       "title2": "Date",
       "description": "Dave resents getting his picture taken.",
-      "cover": "images/dinner.png"
+      "cover": "images/dinner.png",
+      "fullSized": [
+        {
+          "url": "https://s3.amazonaws.com/shitty-stock-photos/stockholm1.jpg"
+        },
+        {
+          "url": "https://s3.amazonaws.com/shitty-stock-photos/stockholm2.jpg"
+        },
+        {
+          "url": "https://s3.amazonaws.com/shitty-stock-photos/stockholm3.jpg"
+        },
+        {
+          "url": "https://s3.amazonaws.com/shitty-stock-photos/stockholm4.jpg"
+        },
+        {
+          "url": "https://s3.amazonaws.com/shitty-stock-photos/stockholm5.jpg"
+        }
+      ]
     },
 
     {
@@ -101,7 +118,12 @@ app.factory('Collection', function(){
       "title1": "Social",
       "title2": "Media",
       "description": "Dave can't wait to see how many likes he can gather.",
-      "cover": "images/sub.png"
+      "cover": "images/sub.png",
+      "fullSized": [
+        {
+          "url": "https://s3.amazonaws.com/shitty-stock-photos/subwayinstagram.jpg"
+        }
+      ]
     },
   ];
 
